@@ -5,14 +5,20 @@
 
 
 }
+.meal{
+    background-color: #e8d9d959;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
 .meal img{
     width: 250px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .meal h6{
-    margin-bottom: 40px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 15px;
     text-align: center;
 }
 #mealDetail{

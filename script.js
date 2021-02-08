@@ -2,8 +2,6 @@
 const mealItems = document.getElementById("meals");
 function searchMeal() {
     const inputMeal = document.getElementById("inputMeal").value;
-    
-
     const api = `https://www.themealdb.com/api/json/v1/1/search.php?s=${inputMeal}`;
     fetch(api)
         .then(res => res.json())
@@ -26,8 +24,8 @@ const displayMealDetail = (idMeal) => {
 }
 
 const renderMealInfo = meals => {
-    console.log(meals);
     const mealDiv = document.getElementById('mealDetail');
+    mealDiv.innerHTML = '';
     mealDiv.innerHTML = `
         <img src="${meals.strMealThumb}">
         <h1>${meals.strMeal}</h1>
